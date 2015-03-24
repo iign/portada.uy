@@ -188,6 +188,7 @@ class FeedController extends Controller {
 					$report[] = $newsItem;
 
                     $intro = strip_tags($newsItem->getIntro(), '<p></p>');
+                    $intro = preg_replace('/La entrada (.*) aparece primero en Diario La República\./i', '', $intro);
 
 					$newsToInsert = new NewsItem([
 				    	'title' 		=> $newsItem->getName(),
