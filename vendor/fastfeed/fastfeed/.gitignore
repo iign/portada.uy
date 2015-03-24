@@ -1,0 +1,10 @@
+/cache
+/build
+/build.xml
+/composer.lock
+/phpunit.xml
+/vendor
+/.idea
+/TODO.md
+*~
+*.swp

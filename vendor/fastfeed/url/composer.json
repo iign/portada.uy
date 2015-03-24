@@ -1,0 +1,21 @@
+{
+    "name": "fastfeed/url",
+    "description": "Simple Library to manage Urls",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Daniel González Cerviño",
+            "email": "daniel@desarrolla2.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "FastFeed\\Url\\": "src/"
+        }
+    }
+}
