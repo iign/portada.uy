@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 
 use FastFeed\Factory;
 use FastFeed\Parser\RSSParser;
+use FastFeed\Processor\RemoveStylesProcessor;
+use FastFeed\Processor\StripTagsProcessor;
 
 use Validator, Input, Redirect, Session;
 
@@ -167,8 +169,10 @@ class FeedController extends Controller {
 
 			foreach ($news as $newsItem) {
 
+                // Check against last 100
 		    	$duplicate = $feed->news()
 		    			 ->where('title', 'LIKE', '%' . $newsItem->getName() . '%')
+                         ->take(100)
 		    			 ->first();
 
 				if (!$duplicate) {
@@ -183,13 +187,14 @@ class FeedController extends Controller {
 
 					$report[] = $newsItem;
 
+                    $intro = strip_tags($newsItem->getIntro(), '<p></p>');
+
 					$newsToInsert = new NewsItem([
 				    	'title' 		=> $newsItem->getName(),
-				    	'intro'   		=> $newsItem->getIntro(),
+				    	'intro'   		=> $intro,
 				    	'permalink'		=> $newsItem->getSource(),
 				    	'date'			=> $date
 					]);
-
 
 					$feed->news()->save($newsToInsert);
 				}
