@@ -34,7 +34,7 @@ Route::get('opciones', 'SettingsController@showSettings');
 Route::get('admin', 'AdminController@index');
 
 Route::resource('admin/news', 'NewsItemController');
-Route::resource('admin/feeds/{ids}', 'FeedController');
+Route::resource('admin/feeds', 'FeedController');
 
 Route::get('admin/fetch', 'FeedController@goFetch');
 
