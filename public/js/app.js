@@ -62,11 +62,11 @@ $(function () {
 Portada.loadSettings = function(){
   for (var i = store.get('sources').length - 1; i >= 0; i--) {
     $('#chk-medium-' + store.get('sources')[i]).prop('checked', true);
+    $('.js-chk-open-new-window').attr('checked', true);
   };
 
   if (store.get('openLinksInNewWindow') == true) {
-    $('.js-chk-open-new-window').prop('checked', true);
-    store.set('openLinksInNewWindow', true);
+    $('.js-chk-open-new-window').attr('checked', true);
   }
   else{
     $('.js-chk-open-new-window').prop('checked', false); 
@@ -78,7 +78,7 @@ Portada.loadSettings = function(){
     store.set('openLinksInReadability', true);
   }
   else{
-    $('.js-chk-open-new-window').prop('checked', false); 
+    $('.js-chk-open-readability').prop('checked', false); 
     store.set('openLinksInReadability', false);
   }
 
@@ -109,5 +109,4 @@ document.addEventListener('polymer-ready', function() {
   Portada.loadSettings();
 });
 
-var hehe = 9999;
 

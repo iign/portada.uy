@@ -117,6 +117,15 @@
 
                 </div>
 
+                <div class="opt-group">
+                    <h3 class="title-sub">Feedback</h3>
+
+                    <p>
+                        Contanos tu experiencia y sugerencias para mejorar Portada.UY
+                        a <a href="mailto:portada.uy@gmail.com">portada.uy@gmail.com</a>
+                    </p>
+                </div>
+
                 <span class="love">
                     Hecho con <span class="heart"></span> por
                     <a href="http://ign.uy">Ignacio Toledo</a> y
