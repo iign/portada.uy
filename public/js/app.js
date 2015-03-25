@@ -4,7 +4,11 @@ $(function () {
   Portada.feeds = [];
 
   if (undefined == store.get('sources')) {
-    store.set('sources', []);
+    var sources = [];
+    $('.chk-medium').each(function(){
+      sources.push($(this).data('medium-id'));
+    });
+    store.set('sources', sources);
   };
 
   $('.js-load-more').on('click', function () {
