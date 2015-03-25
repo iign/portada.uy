@@ -18,6 +18,8 @@
         <meta property="og:site_name" content="Portada.UY" />
         <!-- .Open graph -->
 
+        @include('partials.favicons')
+
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
