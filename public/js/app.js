@@ -11,6 +11,8 @@ $(function () {
     store.set('sources', sources);
   };
 
+  Portada.loadSettings();
+
   $('.js-load-more').on('click', function () {
     Portada.visiblePosts = Portada.visiblePosts + 10;
     $('.news-item:lt(' + Portada.visiblePosts + ')').fadeIn();
@@ -47,7 +49,7 @@ $(function () {
   }
 
   // Settings
-  $('paper-checkbox').change(function() {
+  $('input[type="checkbox"]').change(function() {
     var $this = $(this);
     $('.notification').removeClass('notification--show');
 
@@ -108,9 +110,5 @@ Portada.saveSettings = function(){
   store.set('openLinksInReadability', $('.js-chk-open-readability').prop('checked'));
 
 };
-
-document.addEventListener('polymer-ready', function() {
-  Portada.loadSettings();
-});
 
 
