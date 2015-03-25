@@ -3,15 +3,20 @@ $(function () {
   Portada.visiblePosts = 10;
   Portada.feeds = [];
 
-  if (undefined == store.get('sources')) {
-    var sources = [];
-    $('.chk-medium').each(function(){
-      sources.push($(this).data('medium-id'));
-    });
-    store.set('sources', sources);
-  };
+  if ($('body').hasClass('page-settings')) {
+    if (undefined == store.get('sources')) {
+      console.log('im undefined', store, store.get('sources'));
+      var sources = [];
+      $('.chk-medium').each(function(){
+        sources.push($(this).data('medium-id'));
+      });
+      store.set('sources', sources);
+    };
+  }
 
-  Portada.loadSettings();
+  if ($('body').hasClass('page-settings')) {
+    Portada.loadSettings();
+  }
 
   $('.js-load-more').on('click', function () {
     Portada.visiblePosts = Portada.visiblePosts + 10;
