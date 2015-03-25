@@ -7,5 +7,5 @@
 .env.php
 .env
 
-public/js/all.js
+public/js/*
 Envoy.blade.php
