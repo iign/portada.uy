@@ -1,5 +1,4 @@
 *.DS_Store
-
 /bootstrap/compiled.php
 /public/build/
 /storage/
@@ -7,3 +6,6 @@
 .env.*.php
 .env.php
 .env
+
+public/js/all.js
+Envoy.blade.php
