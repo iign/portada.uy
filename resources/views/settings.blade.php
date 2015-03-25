@@ -119,11 +119,11 @@
                     </p>
                     <p>
                         Compartir en 
-                        <a href="https://facebook.com/sharer/sharer.php?u=http://beta.portada.uy">
+                        <a href="https://facebook.com/sharer/sharer.php?u=http://portada.uy">
                             Facebook
                         </a> 
                         / 
-                        <a href="https://twitter.com/intent/tweet?text=Portada.uy%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://beta.portada.uy">
+                        <a href="https://twitter.com/intent/tweet?text=Portada.uy%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy">
                             Twitter
                         </a>
                     </p>
