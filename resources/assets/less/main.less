@@ -17,6 +17,10 @@ html {
   height: @h;
 }
 
+input[type="checkbox"]{
+  outline: none;
+}
+
 .col{
   float: left;
   padding: 0;
@@ -404,7 +408,7 @@ a{
 .keyframes(~'pound, 0%{ transform: scale(1); } 50%{ transform: scale(1.1); } 100%{ transform: scale(1); }');
 
 .chk-medium{
-  min-width: 55%;
+  margin-right: 5px;
   margin-bottom: 10px;
   cursor: pointer;
   @media (min-width:768px) {
