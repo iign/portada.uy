@@ -14,7 +14,7 @@
         <meta property="og:description" content="Una mejor experiencia para leer noticias." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://portada.uy" />
-        <meta property="og:image" content="http://portada.uy/uploads/fb.png" />
+        <meta property="og:image" content="http://portada.uy/favicons/favicon-192.png" />
         <meta property="og:site_name" content="Portada.UY" />
         <!-- .Open graph -->
 
@@ -23,7 +23,6 @@
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link rel="shortcut icon" href="images/favicon.png">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <!-- Polymer -->
