@@ -26,7 +26,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <!-- Polymer -->
-        <link rel="import" href="components/paper-checkbox/paper-checkbox.html">
+        <script src="components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="import" href="components/core-tooltip/core-tooltip.html">
         <script>var Portada = {};</script>
     </head>
@@ -47,19 +47,25 @@
                     </h3>
 
                     <div class="col half">
-                    @foreach ($feeds as $feed)
-                        <paper-checkbox data-medium-id="{{ $feed->id }}" 
-                                        class="chk-medium" label="{{ $feed->title }}" 
-                                        id="chk-medium-{{ $feed->id }}"></paper-checkbox>
-                    @endforeach
+                        @foreach ($feeds as $feed)
+                            <p>
+                                <input type="checkbox" data-medium-id="{{ $feed->id }}" 
+                                            class="chk-medium" label="{{ $feed->title }}" 
+                                            id="chk-medium-{{ $feed->id }}">
+                                <label for="chk-medium-{{ $feed->id }}">{{ $feed->title }}</label>
+                            </p>
+                        @endforeach
 
                     </div>
                     <div class="col half">
                         @foreach ($feedsSecond as $feed)
-                        <paper-checkbox data-medium-id="{{ $feed->id }}" 
-                                        class="chk-medium" label="{{ $feed->title }}" 
-                                        id="chk-medium-{{ $feed->id }}"></paper-checkbox>
-                    @endforeach
+                        <p>
+                            <input type="checkbox" data-medium-id="{{ $feed->id }}" 
+                                            class="chk-medium" 
+                                            id="chk-medium-{{ $feed->id }}">
+                            <label for="chk-medium-{{ $feed->id }}">{{ $feed->title }}</label>
+                        </p>
+                        @endforeach
                     </div>
 
                 </div>
@@ -67,21 +73,27 @@
                     <h3 class="title-sub">
                         Usabilidad
                     </h3>
-                    <paper-checkbox class="chk-medium js-chk-open-readability"  
-                                    label="Abrir enlaces en Readability" 
-                                    id="chk-open-readability"></paper-checkbox>
+                    <p>
+                        <input type="checkbox" class="chk-medium js-chk-open-readability"   
+                               id="chk-open-readability">
+                        <label for="chk-open-readability">
+                            Abrir enlaces en Readability
+                            <core-tooltip large position="top">
+                                <span class="help-icon">[?]</span>
+                                <span tip class="tooltip">
+                                    Readability mejora la legibilidad, 
+                                    <br> utilizando un servicio externo (Readability.com)
+                                </span>
+                            </core-tooltip>
+                        </label>
+                        
+                    </p> 
 
-                    <core-tooltip large position="top">
-                        <div class="help-icon">[?]</div>
-                        <div tip class="tooltip">
-                            Readability mejora la legibilidad, 
-                            <br> utilizando un servicio externo (Readability.com)
-                        </div>
-                    </core-tooltip>
-
-                    <paper-checkbox class="chk-medium js-chk-open-new-window"  
-                                    label="Abrir enlaces en pestaña nueva" 
-                                    id="chk-open-new-window"></paper-checkbox>
+                    <p>
+                        <input type="checkbox" class="chk-medium js-chk-open-new-window"  
+                                    id="chk-open-new-window">
+                        <label for="chk-open-new-window">Abrir enlaces en pestaña nueva</label>
+                    </p>
                 </div>
                 <div class="opt-group">
                     <h3 class="title-sub">

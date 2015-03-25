@@ -30,7 +30,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <!-- Polymer -->
-        <link rel="import" href="components/paper-checkbox/paper-checkbox.html">
+        <script src="components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="import" href="components/core-tooltip/core-tooltip.html">
         <script>var Portada = {};</script>
     </head>
