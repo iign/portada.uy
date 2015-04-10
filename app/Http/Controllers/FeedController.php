@@ -169,6 +169,11 @@ class FeedController extends Controller {
 
 			foreach ($news as $newsItem) {
 
+                // Filter out news from El País > TV Show
+                if (strpos($newsItem->getSource(), 'tvshow') !== false) {
+                    continue;
+                }
+
                 // Check against last 100
 		    	$duplicate = $feed->news()
 		    			 ->where('title', 'LIKE', '%' . $newsItem->getName() . '%')
