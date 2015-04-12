@@ -140,7 +140,7 @@
                 </div>
 
                 <span class="love">
-                    Hecho con <span class="heart"></span> por
+                    Hecho con <span class="heart"></span> y <span class="beer"></span> por
                     <a href="http://ign.uy">Ignacio Toledo</a> y
                     <a href="http://pablomassa.com">Pablo Massa</a>.
                 </span>
