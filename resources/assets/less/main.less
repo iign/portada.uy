@@ -113,7 +113,9 @@ a{
   text-indent: -99999px;
 
   &:hover{
-    .transform(rotate(90deg));
+    @media (min-width:768px) {
+      .transform(rotate(90deg));
+    }
   }
   &:active{
     .transform(scale(1.1) rotate(90deg));
