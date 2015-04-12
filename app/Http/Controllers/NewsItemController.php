@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\NewsItem;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +16,8 @@ class NewsItemController extends Controller {
 	 */
 	public function index()
 	{
-		return view('admin.news');
+		$news = NewsItem::with('feed')->orderBy('date', 'desc')->paginate(50);
+		return view('admin.news', ['news' => $news]);
 	}
 
 	/**

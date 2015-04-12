@@ -5,24 +5,21 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Noticias</div>
+                <div class="panel-heading">Noticias indexadas (Total: <?php echo $news->total() ?>)</div>
 
                 <div class="panel-body">
-                <p>Work in progress...</p>
                     <ul>
-                        <li>
-                            <small>9 marzo 12:19</small> · <a href="#">Layera defendió cambios en los turnos</a> · <small>(La República)</small>
-                        </li>
-                        <li>
-                            <small>9 marzo 12:12</small> · <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a> · <small>(El País)</small>
-                        </li>
-                        <li>
-                            <small>9 marzo 12:10</small> · <a href="#">Layera defendió cambios en los turnos</a> · <small>(La República)</small>
-                        </li>
-                        <li>
-                            <small>9 marzo 12:07</small> · <a href="#">Layera defendió cambios en los turnos</a> · <small>(La República)</small>
-                        </li>
+                        <?php foreach ($news as $n): ?>
+                            <li>
+                                <small>{{ $n->date }}</small> · 
+                                <a href="{{ $n->permalink }}">{{ $n->title }}</a> · 
+                                <small>({{ $n->feed->title }})</small>
+                            </li>
+                        <?php endforeach ?>
                     </ul>
+                    <div>
+                        <?php echo $news->render(); ?>
+                    </div>
                 </div>
             </div>
         </div>
