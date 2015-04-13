@@ -2,20 +2,20 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Portada.UY</title>
+        <title>Portada</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portada.uy · Una mejor experiencia para leer noticias.">
+        <meta name="description" content="Portada · Una mejor experiencia para leer noticias.">
         <meta name="author" content="Pablo Massa · Ignacio Toledo">
 
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Open graph -->
-        <meta property="og:title" content="Portada.UY" />
+        <meta property="og:title" content="Portada" />
         <meta property="og:description" content="Una mejor experiencia para leer noticias." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://portada.uy" />
         <meta property="og:image" content="http://portada.uy/favicons/favicon-192.png" />
-        <meta property="og:site_name" content="Portada.UY" />
+        <meta property="og:site_name" content="Portada" />
         <!-- .Open graph -->
 
         @include('partials.favicons')
@@ -100,7 +100,7 @@
                         Blog
                     </h3>
                     Blog con novedades del proyecto: <br>
-                    <a href="http://medium.com/@PortadaUY">medium.com/@PortadaUY</a>
+                    <a href="http://medium.com/@Portada">medium.com/@Portada</a>
                 </div>
                 <div class="opt-group">
                     <h3 class="title-sub">
@@ -123,7 +123,7 @@
                             Facebook
                         </a> 
                         / 
-                        <a href="https://twitter.com/intent/tweet?text=Portada.uy%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy">
+                        <a href="https://twitter.com/intent/tweet?text=Portada%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy">
                             Twitter
                         </a>
                     </p>
@@ -134,7 +134,7 @@
                     <h3 class="title-sub">Feedback</h3>
 
                     <p>
-                        Contanos tu experiencia y sugerencias para mejorar Portada.UY
+                        Contanos tu experiencia y sugerencias para mejorar Portada
                         a <a href="mailto:portada.uy@gmail.com">portada.uy@gmail.com</a>
                     </p>
                 </div>

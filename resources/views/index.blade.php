@@ -2,9 +2,9 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Portada.UY</title>
+        <title>Portada</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portada.uy · Una mejor experiencia para leer noticias.">
+        <meta name="description" content="Portada · Una mejor experiencia para leer noticias.">
         <meta name="author" content="Pablo Massa · Ignacio Toledo">
         
         <?php if(App::environment('production')): ?>
@@ -14,12 +14,12 @@
         <?php endif ?>
 
         <!-- Open graph -->
-        <meta property="og:title" content="Portada.UY" />
+        <meta property="og:title" content="Portada" />
         <meta property="og:description" content="Una mejor experiencia para leer noticias." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://portada.uy" />
         <meta property="og:image" content="http://portada.uy/favicons/favicon-192.png" />
-        <meta property="og:site_name" content="Portada.UY" />
+        <meta property="og:site_name" content="Portada" />
         <!-- .Open graph -->
 
         @include('partials.favicons')
@@ -41,7 +41,7 @@
 
         <header class="header">
             <h1 class="top-title">
-                <a href="/">Portada.uy</a>
+                <a href="/">Portada</a>
             </h1>
             <p class="tagline">Una mejor experiencia para leer noticias.</p>
             <a href="/opciones" class="btn-settings js-modal">Opciones</a>
@@ -68,7 +68,7 @@
                     Compartir
                 </p>
                 <div class="share-items">
-                    <a href="https://twitter.com/intent/tweet?text=Portada.uy%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy" class="share-item tw">Compartir en Twitter</a>
+                    <a href="https://twitter.com/intent/tweet?text=Portada%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy" class="share-item tw">Compartir en Twitter</a>
                     <a href="https://facebook.com/sharer/sharer.php?u=http://portada.uy" class="share-item fb">Compartir en Facebook</a>
                 </div>
 
