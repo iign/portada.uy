@@ -75,8 +75,10 @@ a{
   text-decoration: none;
 
   &:hover{
-    color: #ED4264;
-    text-decoration: none;
+    @media (min-width:768px) {
+      color: #ED4264;
+      text-decoration: none;
+    }
   }
 }
 
@@ -216,7 +218,9 @@ a{
       opacity: .8;
     }
     &:hover{
-      color: @color-main;
+      @media (min-width:768px) {
+        color: @color-main;
+      }
     }
   }
 
