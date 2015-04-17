@@ -11,9 +11,6 @@
 |
 */
 
-//Route::get('/', 'WelcomeController@index');
-
-//Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -37,12 +34,3 @@ Route::resource('admin/news', 'NewsItemController');
 Route::resource('admin/feeds', 'FeedController');
 
 Route::get('admin/fetch', 'FeedController@goFetch');
-
-
-
-// Old routes --Delete after admin is finished.
-
-// Route::get('feed/{id}', 'FeedController@getFeed');
-// Route::get('feed', 'FeedController@getNews');
-// Route::get('opciones', 'SettingsController@showSettings');
-// Route::get('medio/{slug}', 'FeedController@showSingleFeed');
