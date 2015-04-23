@@ -192,8 +192,11 @@ class FeedController extends Controller {
 
 					$report[] = $newsItem;
 
-                    $intro = strip_tags($newsItem->getIntro(), '<p></p>');
+                    $intro = trim(strip_tags($newsItem->getIntro(), '<p></p><br>'));
                     $intro = preg_replace('/La entrada (.*) aparece primero en Diario La República\./i', '', $intro);
+                    if (strlen($intro) > 350) {
+                        $intro = str_limit($intro, $limit = 350, $end = '...');
+                    }
 
 					$newsToInsert = new NewsItem([
 				    	'title' 		=> $newsItem->getName(),
