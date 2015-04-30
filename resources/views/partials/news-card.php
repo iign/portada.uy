@@ -2,7 +2,7 @@
   {{ #. }}
     <article class="news-item hidden">
       <div>
-          <a href="{{ feed.website }}" class="medium">{{ feed.title }}</a>
+          <a href="medio/{{ feed.slug }}" class="medium">{{ feed.title }}</a>
       </div>
       <a class="title link js-news-item-link" data-href="{{ permalink }}"
           data-readability="http://www.readability.com/m?url={{ permalink }}"

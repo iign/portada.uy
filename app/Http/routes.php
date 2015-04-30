@@ -24,7 +24,7 @@ Route::get('feed', 'FeedController@getNews');
 
 Route::get('opciones', 'SettingsController@showSettings');
 
-// Route::get('medio/{slug}', 'FeedController@showSingleFeed');
+Route::get('medio/{slug}', 'FeedController@showSingleFeed');
 
 /* Admin routes */
 

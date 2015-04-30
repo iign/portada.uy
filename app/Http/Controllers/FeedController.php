@@ -12,6 +12,7 @@ use FastFeed\Factory;
 use FastFeed\Parser\RSSParser;
 use FastFeed\Processor\RemoveStylesProcessor;
 use FastFeed\Processor\StripTagsProcessor;
+use Illuminate\Support\Str;
 
 use Validator, Input, Redirect, Session;
 
@@ -28,6 +29,12 @@ class FeedController extends Controller {
     public function __construct()
     {
         
+    }
+
+    public function showSingleFeed($slug)
+    {
+        $feed = Feed::where('slug', '=', $slug)->firstOrFail();
+        return view('feed', ['feed' => $feed]);
     }
 
 	/**
@@ -79,6 +86,7 @@ class FeedController extends Controller {
             $feed->feed_url = Input::get('feed_url');
             $feed->website = Input::get('website');
             $feed->description = Input::get('description');
+            $feed->slug = Str::slug(Input::get('title'));
             $feed->save();
 
             // redirect

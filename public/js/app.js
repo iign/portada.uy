@@ -53,6 +53,32 @@ $(function () {
     });
   }
 
+  if ($('body').hasClass('page-feed')) {
+    $.ajax({
+      url: '/feed',
+      type: 'get',
+      data: {
+        sources: $('body').data('feed')
+      },
+      success: function (data) {
+        Portada.feeds = data;
+        var template = $('#template').html();
+        Mustache.parse(template);
+        var rendered = Mustache.render(template, data);
+        $('.news-list').html(rendered);
+        $('.js-load-more').addClass('show');
+        if (store.get('openLinksInNewWindow')) {
+          $('.js-news-item-link').attr('target', '_blank');
+        }
+        if (store.get('openLinksInReadability')) {
+          $('.js-news-item-link').each(function(){
+            $(this).attr('href', $(this).data('readability'));
+          });
+        }
+      }
+    });
+  }
+
   // Settings
   $('input[type="checkbox"]').change(function() {
     var $this = $(this);
