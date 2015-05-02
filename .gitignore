@@ -1,6 +1,7 @@
 *.DS_Store
 /bootstrap/compiled.php
 /public/build/
+public/components
 /storage/
 /node_modules/
 .env.*.php
