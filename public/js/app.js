@@ -1,7 +1,26 @@
 $(function () {
 
+  // Setup
   Portada.visiblePosts = 10;
   Portada.feeds = [];
+
+  jQuery.timeago.settings.strings = {
+     prefixAgo: "Hace",
+     prefixFromNow: "Dentro de",
+     suffixAgo: "",
+     suffixFromNow: "",
+     seconds: "Menos de un minuto",
+     minute: "un minuto",
+     minutes: "unos %d minutos",
+     hour: "una hora",
+     hours: "%d horas",
+     day: "un día",
+     days: "%d días",
+     month: "un mes",
+     months: "%d meses",
+     year: "un año",
+     years: "%d años"
+  };
 
   if ($('body').hasClass('page-settings')) {
     if (undefined == store.get('sources')) {
@@ -49,6 +68,10 @@ $(function () {
             $(this).attr('href', $(this).data('readability'));
           });
         }
+
+        // init human-friendly dates
+        $(".timeago").timeago();
+
       }
     });
   }
@@ -75,6 +98,8 @@ $(function () {
             $(this).attr('href', $(this).data('readability'));
           });
         }
+        // init human-friendly dates
+        $(".timeago").timeago();
       }
     });
   }

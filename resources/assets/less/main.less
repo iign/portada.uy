@@ -224,10 +224,20 @@ a{
     }
   }
 
+  .time-wrap{
+    cursor: default;
+    &:hover{
+      .time{ display: none; }
+      .time-absolute{ display: inline-block; }
+    }
+  }
+
   .time{
     font-size: 12px;
     color: #ccc;
   }
+
+  .time-absolute{ display: none; }
 }
 
 .footer {

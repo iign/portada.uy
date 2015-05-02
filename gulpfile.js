@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
   mix.scripts(["components/jquery/dist/jquery.min.js",
                "components/mustache/mustache.js",
+               "components/jquery-timeago/jquery.timeago.js",
                "components/store.js/store.min.js",
                "js/app.js"],
                "public/js/all.js",

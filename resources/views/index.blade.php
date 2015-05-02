@@ -89,6 +89,7 @@
             <script src="components/jquery/dist/jquery.min.js"></script>
             <script src="components/mustache/mustache.js"></script>
             <script src="components/store.js/store.min.js"></script>
+            <script src="components/jquery-timeago/jquery.timeago.js"></script>
             <script src="js/app.js"></script>
         <?php endif ?>
     </body>
