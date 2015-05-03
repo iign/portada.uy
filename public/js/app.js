@@ -81,7 +81,7 @@ $(function () {
       url: '/feed',
       type: 'get',
       data: {
-        sources: $('body').data('feed')
+        sources: [$('body').data('feed')]
       },
       success: function (data) {
         Portada.feeds = data;
