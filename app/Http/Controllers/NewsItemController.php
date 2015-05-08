@@ -81,7 +81,10 @@ class NewsItemController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$newsItem = NewsItem::find($id);
+		$newsItem->delete();
+
+		return redirect('admin/news')->withFlashMessage('Noticia eliminada.');
 	}
 
 }

@@ -30,7 +30,7 @@ Route::get('medio/{slug}', 'FeedController@showSingleFeed');
 
 Route::get('admin', 'AdminController@index');
 
-Route::resource('admin/news', 'NewsItemController');
+Route::resource('admin/news', 'NewsItemController', array('as' => 'news'));
 Route::resource('admin/feeds', 'FeedController');
 
 Route::get('admin/fetch', 'FeedController@goFetch');
