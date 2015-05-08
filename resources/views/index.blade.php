@@ -64,10 +64,11 @@
 
         <div class="share-section">
             <div class="share-box">
+                
+                <div class="share-items">
                 <p class="share-me">
                     Compartir
                 </p>
-                <div class="share-items">
                     <a href="https://twitter.com/intent/tweet?text=Portada%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy" class="share-item tw">Compartir en Twitter</a>
                     <a href="https://facebook.com/sharer/sharer.php?u=http://portada.uy" class="share-item fb">Compartir en Facebook</a>
                 </div>
