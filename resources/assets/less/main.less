@@ -27,7 +27,7 @@ input[type="checkbox"]{
 
   &.half{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     @media (min-width: 768px){
       width: 50%;
     }
@@ -379,7 +379,7 @@ a{
   color: #777;
   margin: 0 auto;
   padding-bottom: 50px;
-  max-width: 96%;
+  max-width: 100%;
   @media (min-width:768px) {
     max-width: 400px;
   }
@@ -402,9 +402,13 @@ a{
   }
 
   .opt-group{
+    padding: 0 15px 50px 15px;
     margin-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #EAEAEA;
+    @media (min-width:768px) {
+      padding: 0 0 50px 0;
+    }
     &:last-of-type{
       margin-bottom: 50px;
     }
@@ -501,4 +505,9 @@ a{
     border: 1px solid #988B8E;
     cursor: default;
   }
+}
+
+.opt-group__item{
+  margin: 0 0 15px 0;
+  padding: 0;
 }

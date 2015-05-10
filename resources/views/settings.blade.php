@@ -48,7 +48,7 @@
 
                     <div class="col half">
                         @foreach ($feeds as $feed)
-                            <p>
+                            <p class="opt-group__item">
                                 <input type="checkbox" data-medium-id="{{ $feed->id }}" 
                                             class="chk-medium" label="{{ $feed->title }}" 
                                             id="chk-medium-{{ $feed->id }}">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col half">
                         @foreach ($feedsSecond as $feed)
-                        <p>
+                        <p class="opt-group__item">
                             <input type="checkbox" data-medium-id="{{ $feed->id }}" 
                                             class="chk-medium" 
                                             id="chk-medium-{{ $feed->id }}">
