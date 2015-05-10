@@ -141,7 +141,7 @@ a{
 }
 
 .main{
-  padding: 0 15px;
+  padding: 0;
   width: 100%;
   min-height: 500px;
   min-height: 60vh;
@@ -159,9 +159,12 @@ a{
 }
 
 .news-item{
+  padding: 0 15px 50px 15px;
   width: 100%;
-  padding-bottom: 50px;
   border-bottom: 1px solid #EAEAEA;
+  @media (min-width: 768px) {
+    padding: 0 0 50px 0;
+  }
 
   & + &{
     padding-top: 50px;
