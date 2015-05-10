@@ -37,9 +37,8 @@
             Opciones guardadas ;)
         </div>
 
-        <div class="overlay">
+        <main class="main container">
             <a href="/" class="icon icon-close">Cerrar</a>
-            <div class="modal-container">
                 <h2 class="title">Opciones</h2>
                 <div class="opt-group">
                     <h3 class="title-sub">
@@ -139,13 +138,12 @@
                     </p>
                 </div>
 
-                <span class="love">
+                <div class="love">
                     Hecho con <span class="heart"></span> y <span class="beer"></span> por
                     <a href="http://ign.uy">Ignacio Toledo</a> y
                     <a href="http://pablomassa.com">Pablo Massa</a>.
-                </span>
-            </div>
-        </div>
+                </div>
+        </main>
 
         <?php if(App::environment('production')): ?>
             <script src="{{ elixir("js/all.js") }}"></script>
