@@ -8,5 +8,7 @@ public/components
 .env.php
 .env
 
+vendor/*
+
 public/js/*
 Envoy.blade.php

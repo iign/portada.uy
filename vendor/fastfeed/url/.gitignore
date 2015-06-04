@@ -1,9 +1,0 @@
-/cache
-/build
-/composer.lock
-/vendor
-/.idea
-/TODO.md
-/phpunit.xml
-*~
-*.swp
