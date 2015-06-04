@@ -11,9 +11,16 @@
                 </div>
             @endif
             <div class="panel panel-default">
-                <div class="panel-heading">Noticias indexadas (Total: <?php echo $news->total() ?>)</div>
+                <div class="panel-heading">Noticias (Total: <?php echo $news->total() ?>)</div>
 
                 <div class="panel-body">
+            
+                    {!! Form::open(array('url' => 'admin/news', 'method' => 'get')) !!}
+                      <div class="form-group">
+                        <input type="text" name="q" class="form-control" placeholder="Búsqueda...">
+                      </div>
+                    {!! Form::close() !!}
+
                     <ul class="news-list">
                         <?php foreach ($news as $n): ?>
                             <li class="news-list__item list-unstyled">
@@ -30,7 +37,7 @@
                         <?php endforeach ?>
                     </ul>
                     <div>
-                        <?php echo $news->render(); ?>
+                        <?php echo $news->appends(['q' => $query ])->render(); ?>
                     </div>
                 </div>
             </div>

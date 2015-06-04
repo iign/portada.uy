@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use Input;
+
 class NewsItemController extends Controller {
 
 	/**
@@ -16,8 +18,13 @@ class NewsItemController extends Controller {
 	 */
 	public function index()
 	{
-		$news = NewsItem::with('feed')->orderBy('date', 'desc')->paginate(50);
-		return view('admin.news', ['news' => $news]);
+		$q = Input::get('q');
+		$news = NewsItem::with('feed')
+			    ->where('title', 'LIKE', "%$q%")
+			    ->orWhere('intro', 'LIKE', "%$q%")
+			    ->orderBy('date', 'desc')
+				->paginate(50);
+		return view('admin.news', ['news' => $news, 'query' => $q]);
 	}
 
 	/**
