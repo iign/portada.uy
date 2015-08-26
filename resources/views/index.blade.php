@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portada · Una mejor experiencia para leer noticias.">
         <meta name="author" content="Pablo Massa · Ignacio Toledo">
-        
+
         <?php if(App::environment('production')): ?>
             <link rel="stylesheet" href="{{ elixir("css/main.css") }}">
         <?php else: ?>
@@ -64,7 +64,7 @@
 
         <div class="share-section">
             <div class="share-box">
-                
+
                 <div class="share-items">
                 <p class="share-me">
                     Compartir
@@ -75,7 +75,7 @@
 
             </div>
         </div>
-        
+
         <?php if(App::environment('production')): ?>
             <script src="{{ elixir("js/all.js") }}"></script>
             <script>
