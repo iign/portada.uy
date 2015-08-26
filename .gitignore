@@ -12,3 +12,4 @@ vendor/*
 
 public/js/*
 Envoy.blade.php
+.idea
