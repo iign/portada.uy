@@ -16,7 +16,6 @@
       </div>
       <div class="time-wrap">
         <time class="time timeago time-relative" title="{{ created_at }}-0300" datetime="{{ created_at }}-0300">{{ created_at }}</time>
-        <time class="time time-absolute" datetime="{{ created_at }}">{{ created_at }}</time>
       </div>
     </article>
   {{ /. }}
