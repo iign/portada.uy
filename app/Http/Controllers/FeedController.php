@@ -177,8 +177,10 @@ class FeedController extends Controller {
 
 			foreach ($news as $newsItem) {
 
-                // Filter out news from El País > TV Show
-                if (strpos($newsItem->getSource(), 'tvshow') !== false) {
+                // No thanks...
+                if (strpos($newsItem->getSource(), 'tvshow') !== false // TVShow
+				 	|| strpos($newsItem->getIntro(), 'Horóscopo') !== false // Horóscopos de La República,
+					|| strpos($newsItem->getIntro(), 'De nuestro Recetario') !== false) { // Recetario de La República
                     continue;
                 }
 
