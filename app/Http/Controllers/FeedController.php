@@ -179,8 +179,9 @@ class FeedController extends Controller {
 
                 // No thanks...
                 if (strpos($newsItem->getSource(), 'tvshow') !== false // TVShow
-				 	|| strpos($newsItem->getIntro(), 'Horóscopo') !== false // Horóscopos de La República,
-					|| strpos($newsItem->getIntro(), 'De nuestro Recetario') !== false) { // Recetario de La República
+                    || strtolower(strpos($newsItem->getIntro()), 'horóscopo') !== false // Horóscopos de La República,
+				 	|| strtolower(strpos($newsItem->getIntro()), 'del recetario') !== false // Recetario de La República,
+					|| strtolower(strpos($newsItem->getIntro()), 'de nuestro recetario') !== false) { // Recetario de La República
                     continue;
                 }
 
