@@ -28,7 +28,7 @@ class FeedController extends Controller {
      */
     public function __construct()
     {
-        
+
     }
 
     public function showSingleFeed($slug)
@@ -157,7 +157,7 @@ class FeedController extends Controller {
                           ->get();
         }
 
-		
+
         return $news;
 	}
 
@@ -179,10 +179,12 @@ class FeedController extends Controller {
 
                 // No thanks...
                 if (strpos($newsItem->getSource(), 'tvshow') !== false // TVShow
-                    || strtolower(strpos($newsItem->getIntro()), 'horóscopo') !== false // Horóscopos de La República,
-				 	|| strtolower(strpos($newsItem->getIntro()), 'del recetario') !== false // Recetario de La República,
-					|| strtolower(strpos($newsItem->getIntro()), 'de nuestro recetario') !== false) { // Recetario de La República
-                    continue;
+                    || strpos(strtolower($newsItem->getIntro()), 'horóscopo') !== false // Horóscopos de La República,
+				 	|| strpos(strtolower($newsItem->getIntro()), 'del recetario') !== false // Recetario de La República,
+					|| strpos(strtolower($newsItem->getIntro()), 'de nuestro recetario') !== false) { // Recetario de La República
+
+					continue;
+
                 }
 
                 // Check against last 100
@@ -222,7 +224,7 @@ class FeedController extends Controller {
 			}
 		}
 
-		
+
 
 		return view('admin.fetch_report', ['news' => $report]);
 	}
