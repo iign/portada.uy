@@ -44,11 +44,6 @@ $(function () {
         if (store.get('openLinksInNewWindow')) {
           $('.js-news-item-link').attr('target', '_blank');
         }
-        if (store.get('openLinksInReadability')) {
-          $('.js-news-item-link').each(function(){
-            $(this).attr('href', $(this).data('readability'));
-          });
-        }
       }
     });
   }
@@ -80,17 +75,8 @@ Portada.loadSettings = function(){
     $('.js-chk-open-new-window').attr('checked', true);
   }
   else{
-    $('.js-chk-open-new-window').prop('checked', false); 
+    $('.js-chk-open-new-window').prop('checked', false);
     store.set('openLinksInNewWindow', false);
-  }
-
-  if (store.get('openLinksInReadability') == true) {
-    $('.js-chk-open-readability').prop('checked', true);
-    store.set('openLinksInReadability', true);
-  }
-  else{
-    $('.js-chk-open-readability').prop('checked', false); 
-    store.set('openLinksInReadability', false);
   }
 
 };
@@ -111,7 +97,4 @@ Portada.saveSettings = function(){
   // Save Target=Blank
   store.set('openLinksInNewWindow', $('.js-chk-open-new-window').prop('checked'));
 
-  // Save Readability
-  store.set('openLinksInReadability', $('.js-chk-open-readability').prop('checked'));
-
-};
+}

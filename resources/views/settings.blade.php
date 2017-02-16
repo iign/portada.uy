@@ -48,8 +48,8 @@
                     <div class="col half">
                         @foreach ($feeds as $feed)
                             <p class="opt-group__item">
-                                <input type="checkbox" data-medium-id="{{ $feed->id }}" 
-                                            class="chk-medium" label="{{ $feed->title }}" 
+                                <input type="checkbox" data-medium-id="{{ $feed->id }}"
+                                            class="chk-medium" label="{{ $feed->title }}"
                                             id="chk-medium-{{ $feed->id }}">
                                 <label for="chk-medium-{{ $feed->id }}">{{ $feed->title }}</label>
                             </p>
@@ -59,8 +59,8 @@
                     <div class="col half">
                         @foreach ($feedsSecond as $feed)
                         <p class="opt-group__item">
-                            <input type="checkbox" data-medium-id="{{ $feed->id }}" 
-                                            class="chk-medium" 
+                            <input type="checkbox" data-medium-id="{{ $feed->id }}"
+                                            class="chk-medium"
                                             id="chk-medium-{{ $feed->id }}">
                             <label for="chk-medium-{{ $feed->id }}">{{ $feed->title }}</label>
                         </p>
@@ -72,24 +72,9 @@
                     <h3 class="title-sub">
                         Usabilidad
                     </h3>
-                    <p>
-                        <input type="checkbox" class="chk-medium js-chk-open-readability"   
-                               id="chk-open-readability">
-                        <label for="chk-open-readability">
-                            Abrir enlaces en Readability
-                            <core-tooltip large position="top">
-                                <span class="help-icon">[?]</span>
-                                <span tip class="tooltip">
-                                    Readability mejora la legibilidad, 
-                                    <br> utilizando un servicio externo (Readability.com)
-                                </span>
-                            </core-tooltip>
-                        </label>
-                        
-                    </p> 
 
                     <p>
-                        <input type="checkbox" class="chk-medium js-chk-open-new-window"  
+                        <input type="checkbox" class="chk-medium js-chk-open-new-window"
                                     id="chk-open-new-window">
                         <label for="chk-open-new-window">Abrir enlaces en pestaña nueva</label>
                     </p>
@@ -117,11 +102,11 @@
                         No hacemos publicidad, si el sitio te parece útil, compartilo.
                     </p>
                     <p>
-                        Compartir en 
+                        Compartir en
                         <a href="https://facebook.com/sharer/sharer.php?u=http://portada.uy">
                             Facebook
-                        </a> 
-                        / 
+                        </a>
+                        /
                         <a href="https://twitter.com/intent/tweet?text=Portada%20·%20Una%20mejor%20experiencia%20para%20leer%20noticias.%20http://portada.uy">
                             Twitter
                         </a>
