@@ -6,6 +6,7 @@
       </div>
       <div>
           <a class="title link js-news-item-link" data-href="{{ permalink }}"
+              data-readability="http://outline.com/{{ permalink }}"
               href="{{ permalink }}">
               {{{ title }}}
           </a>

@@ -5,8 +5,8 @@
         <title>Portada / {{ $feed->title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portada · Una mejor experiencia para leer noticias.">
-        <meta name="author" content="Pablo Massa · Ignacio Toledo">
-        
+        <meta name="author" content="Pablo Massa · Nacho Toledo">
+
         <?php if(App::environment('production')): ?>
             <link rel="stylesheet" href="{{ elixir("css/main.css") }}">
         <?php else: ?>
@@ -76,7 +76,7 @@
 
             </div>
         </div>
-        
+
         <?php if(App::environment('production')): ?>
             <script src="{{ elixir("js/all.js") }}"></script>
             <script>

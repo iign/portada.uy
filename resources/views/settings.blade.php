@@ -72,6 +72,21 @@
                     <h3 class="title-sub">
                         Usabilidad
                     </h3>
+                    <p>
+                        <input type="checkbox" class="chk-medium js-chk-open-readability"
+                               id="chk-open-readability">
+                        <label for="chk-open-readability">
+                            Abrir enlaces en Outline
+                            <core-tooltip large position="top">
+                                <span class="help-icon">[?]</span>
+                                <span tip class="tooltip">
+                                    Outline mejora la legibilidad,
+                                    <br> utilizando un servicio externo (outline.com)
+                                </span>
+                            </core-tooltip>
+                        </label>
+
+                    </p>
 
                     <p>
                         <input type="checkbox" class="chk-medium js-chk-open-new-window"
@@ -125,7 +140,7 @@
 
                 <div class="love">
                     Hecho con <span class="heart"></span> y <span class="beer"></span> por
-                    <a href="http://ign.uy">Ignacio Toledo</a> y
+                    <a href="http://ign.uy">Nacho Toledo</a> y
                     <a href="http://pablomassa.com">Pablo Massa</a>.
                 </div>
         </main>

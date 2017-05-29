@@ -25,6 +25,21 @@
         </div>
         <div class="opt-group">
             <h3 class="title-sub">
+                Usabilidad
+            </h3>
+            <paper-checkbox class="chk-readability"  label="Abrir enlaces en Readability" id="chk-la-republica"></paper-checkbox>
+
+            <core-tooltip large position="top">
+                <div class="help-icon">[?]</div>
+                <div tip class="tooltip">
+                    Outline mejora la legibilidad, <br> utilizando un servicio externo (outline.com)
+                </div>
+            </core-tooltip>
+
+            <paper-checkbox class="chk-readability"  label="Abrir enlaces en otra pestaña" id="chk-la-republica"></paper-checkbox>
+        </div>
+        <div class="opt-group">
+            <h3 class="title-sub">
                 Blog
             </h3>
             Blog con novedades del proyecto: <br>
