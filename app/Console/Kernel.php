@@ -23,7 +23,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected function schedule(Schedule $schedule)
 	{
-		$schedule->command('feeds:fetch')->everyFiveMinutes();
+		$schedule->command('feeds:fetch')->hourly();
 	}
 
 }
