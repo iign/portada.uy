@@ -32,7 +32,7 @@
             <core-tooltip large position="top">
                 <div class="help-icon">[?]</div>
                 <div tip class="tooltip">
-                    Readability mejora la legibilidad, <br> utilizando un servicio externo (Readability.com)
+                    Outline mejora la legibilidad, <br> utilizando un servicio externo (outline.com)
                 </div>
             </core-tooltip>
 
@@ -72,4 +72,3 @@
         </span>
     </div>
 </div>
-
