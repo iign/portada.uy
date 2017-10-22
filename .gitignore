@@ -13,3 +13,4 @@ vendor/*
 public/js/*
 Envoy.blade.php
 .idea
+npm-debug.log
