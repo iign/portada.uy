@@ -1,7 +1,8 @@
 @import (less) "../../../public/components/normalize.css/normalize.css";
 @import (less) "../../../public/components/lesshat/build/lesshat.less";
 @import (less) "../../../public/components/retina.js/src/retina.less";
-@import (less) "../../../public/components/fontawesome/css/font-awesome.min.css";
+@import (less) "../../../public/components/font-awesome/css/font-awesome.min.css";
+@import (less) "_tooltip.less";
 @import (less) "_notifications.less";
 @import (less) "_spinner.less";
 
@@ -346,7 +347,7 @@ a{
 
   .icon-close{
     .transition(100ms);
-    
+
     line-height: 2.8;
     position: absolute;
     text-indent: -99999px;
@@ -367,7 +368,7 @@ a{
       .transform(scale(1.1));
     }
   }
-  
+
   .title{
     font-weight: normal;
     margin: 50px 0 50px;
@@ -493,7 +494,7 @@ a{
   text-transform: uppercase;
   outline: none;
   &:hover{ opacity: .7; }
-  &.disabled{ 
+  &.disabled{
     color: #969091;
     border: 1px solid #988B8E;
     cursor: default;

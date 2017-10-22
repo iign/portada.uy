@@ -13,13 +13,13 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
   mix.scripts(["components/jquery/dist/jquery.min.js",
-               "components/mustache/mustache.js",
+               "components/mustache.js/mustache.min.js",
+               "components/webcomponentsjs/webcomponents-lite.js",
                "components/jquery-timeago/jquery.timeago.js",
-               "components/store.js/store.min.js",
+               "components/store.js/dist/store.modern.min.js",
                "js/app.js"],
                "public/js/all.js",
                "public")
      .version(["public/css/main.css", "public/js/all.js"])
      .copy("public/img", "public/build/img")
-});
-
+})

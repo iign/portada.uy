@@ -30,8 +30,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <!-- Polymer -->
-        <script src="components/webcomponentsjs/webcomponents.min.js"></script>
-        <link rel="import" href="components/core-tooltip/core-tooltip.html">
+        <script src="components/webcomponentsjs/webcomponents-lite.js"></script>
         <script>var Portada = {};</script>
     </head>
 
@@ -88,8 +87,8 @@
             </script>
         <?php else: ?>
             <script src="components/jquery/dist/jquery.min.js"></script>
-            <script src="components/mustache/mustache.js"></script>
-            <script src="components/store.js/store.min.js"></script>
+            <script src="components/store.js/dist/store.modern.min.js"></script>
+            <script src="components/mustache.js/mustache.min.js"></script>
             <script src="components/jquery-timeago/jquery.timeago.js"></script>
             <script src="js/app.js"></script>
         <?php endif ?>

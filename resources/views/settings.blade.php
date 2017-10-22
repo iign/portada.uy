@@ -26,8 +26,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
         <!-- Polymer -->
-        <script src="components/webcomponentsjs/webcomponents.min.js"></script>
-        <link rel="import" href="components/core-tooltip/core-tooltip.html">
+        <script src="components/webcomponentsjs/webcomponents-lite.js"></script>
         <script>var Portada = {};</script>
     </head>
 
@@ -77,13 +76,8 @@
                                id="chk-open-readability">
                         <label for="chk-open-readability">
                             Abrir enlaces en Outline
-                            <core-tooltip large position="top">
-                                <span class="help-icon">[?]</span>
-                                <span tip class="tooltip">
-                                    Outline mejora la legibilidad,
-                                    <br> utilizando un servicio externo (outline.com)
-                                </span>
-                            </core-tooltip>
+                            <span data-tooltip class="help-icon" title="Outline mejora la legibilidad,
+                            utilizando un servicio externo (outline.com)">[?]</span>
                         </label>
 
                     </p>
@@ -157,8 +151,9 @@
             </script>
         <?php else: ?>
             <script src="components/jquery/dist/jquery.min.js"></script>
-            <script src="components/mustache/mustache.js"></script>
-            <script src="components/store.js/store.min.js"></script>
+            <script src="components/store.js/dist/store.modern.min.js"></script>
+            <script src="components/mustache.js/mustache.min.js"></script>
+            <script src="components/jquery-timeago/jquery.timeago.js"></script>
             <script src="js/app.js"></script>
         <?php endif ?>
     </body>
